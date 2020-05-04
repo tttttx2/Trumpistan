@@ -1,0 +1,14 @@
+ {
+    "name": "Trumpistan",
+    "version": "1.0",
+    "description": "Replaces USA, United States and United States of America with Trumpistan",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "js": ["background.js"],
+      "run_at": "document_end"
+      }
+    ]
+  }
