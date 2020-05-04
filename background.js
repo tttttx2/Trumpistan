@@ -18,12 +18,13 @@ function findAndReplace(){
 
 function replaceText (node) {
   let value = node.nodeValue;
-  value = value.replace(/USA/gi, 'Trumpistan');
-  value = value.replace(/U.S./gi, 'Trumpistan');
-  value = value.replace(/United States of America/gi, 'Trumpistan');
-  value = value.replace(/United States/gi, 'Trumpistan');
-  value = value.replace(/the Trumpistan/gi, 'Trumpistan');
-  value = value.replace(/The Trumpistan/gi, 'Trumpistan');
+  value = value.replace(/USA/g, 'Trumpistan');
+  value = value.replace(/U\.S\./g, 'Trumpistan');
+  value = value.replace(/US /g, 'Trumpistan');
+  value = value.replace(/United States of America/g, 'Trumpistan');
+  value = value.replace(/United States/g, 'Trumpistan');
+  value = value.replace(/the Trumpistan/g, 'Trumpistan');
+  value = value.replace(/The Trumpistan/g, 'Trumpistan');
   node.nodeValue = value;
 }
 
